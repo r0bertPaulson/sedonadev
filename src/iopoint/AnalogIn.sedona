@@ -1,0 +1,46 @@
+//
+// Copyright (c) 2024 Calvin Slater Open Source Control
+// Licensed under the Academic Free License version 3.0
+//
+// History:
+// 10 May 24 Calvin Slater Creation
+//
+
+**
+** Implements a physical analog input point in a Device.
+**
+
+class AnalogIn
+  extends AiPoint
+{
+  ////////////////////////////////////////////////////////////////
+  // Properties
+  ////////////////////////////////////////////////////////////////
+
+  ** Input Type
+  property int inputType = 0
+
+  ** Max range value
+  property float maxValue = 0.0
+
+  ** Min range value
+  property float minValue = 0.0
+
+  ////////////////////////////////////////////////////////////////
+  // Life cycle
+  ////////////////////////////////////////////////////////////////
+
+  **
+  ** Reads point from hardware
+  **
+
+  virtual override void execute()
+  {
+
+   out := doRead(address, inputType)
+
+  }
+
+  ////////////////////////////////////////////////////////////////
+  // app support
+  ////////////////////////////////////////////////////////////////
