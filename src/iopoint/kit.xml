@@ -20,5 +20,8 @@
 
   <!-- Natives -->
   <native qname="iopoint::AnalogIn.doRead"                 id="4::0" />
+  <native qname="iopoint::AnalogOut.doWrite"               id="4::1" />
+  <native qname="iopoint::DigitalIn.doRead"                id="4::2" />
+  <native qname="iopoint::DigitalOut.doWrite"              id="4::3" />
 
 </sedonaKit>
